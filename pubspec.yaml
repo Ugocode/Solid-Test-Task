@@ -38,6 +38,8 @@ dependencies:
   cupertino_icons: ^1.0.2
   #for simple animations
   flutter_animate: ^4.1.1+1
+  #for linting
+  solid_lints: ^0.0.14
 
 dev_dependencies:
   flutter_test:
