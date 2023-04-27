@@ -18,7 +18,7 @@ class Main extends StatelessWidget {
       title: 'Solid Color Changer',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.teal,
       ),
       home: const MyHomePage(),
     );
