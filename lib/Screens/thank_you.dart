@@ -18,6 +18,8 @@ class ThankyouPage extends StatelessWidget {
               ),
               Text('Thank You For Viewing', style: TextStyle(fontSize: 20)),
               Spacer(),
+
+              //bottom signature text
               Text('Made with ❤️ by @Ugocode'),
             ]),
       ),

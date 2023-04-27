@@ -16,7 +16,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   Color? newColor;
 
-  //function for changing  colors:
+  //function for changing colors:
   changeColor() {
     Random random = Random();
 
@@ -36,9 +36,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
+        //call the color function
         changeColor();
       },
       child: Scaffold(
+        //to get our background color
         backgroundColor: newColor,
         appBar: AppBar(
           title: const Text("Tap On the Screen"),
@@ -54,6 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   color: Colors.black,
                 ),
               )
+                  //adding some animations to the text
                   .animate()
                   .flip(duration: const Duration(seconds: 2))
                   .scale()
@@ -72,6 +75,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ],
           ),
         ),
+
+        //navigate to next screen
         floatingActionButton: FloatingActionButton(
           onPressed: () {
             Navigator.push(context,
