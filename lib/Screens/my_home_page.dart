@@ -50,34 +50,36 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text("Tap On the Screen"),
         ),
         body: Center(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text(
-                'Hello there! ',
-                style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.black,
-                ),
-              )
+          child: Expanded(
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  'Hello there! ',
+                  style: TextStyle(
+                    fontSize: 35,
+                    color: Colors.black,
+                  ),
+                )
 
-                  ///adding some animations to the text
-                  .animate()
-                  .flip(duration: const Duration(seconds: 2))
-                  .scale()
-                  .then()
-                  .shimmer(delay: textShimmer.ms),
-              const Text(
-                '👋',
-                style: TextStyle(
-                  fontSize: 35,
-                  color: Colors.black,
-                ),
-              )
-                  .animate()
-                  .scale(delay: emojiShimmerValue.ms)
-                  .shake(duration: const Duration(seconds: 1))
-            ],
+                    ///adding some animations to the text
+                    .animate()
+                    .flip(duration: const Duration(seconds: 2))
+                    .scale()
+                    .then()
+                    .shimmer(delay: textShimmer.ms),
+                const Text(
+                  '👋',
+                  style: TextStyle(
+                    fontSize: 35,
+                    color: Colors.black,
+                  ),
+                )
+                    .animate()
+                    .scale(delay: emojiShimmerValue.ms)
+                    .shake(duration: const Duration(seconds: 1))
+              ],
+            ),
           ),
         ),
 

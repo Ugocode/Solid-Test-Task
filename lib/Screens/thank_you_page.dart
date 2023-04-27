@@ -10,20 +10,22 @@ class ThankyouPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(),
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const [
-            Spacer(),
-            Text(
-              '🎉',
-              style: TextStyle(fontSize: 80),
-            ),
-            Text('Thank You For Viewing', style: TextStyle(fontSize: 20)),
-            Spacer(),
+        child: Expanded(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: const [
+              Spacer(),
+              Text(
+                '🎉',
+                style: TextStyle(fontSize: 80),
+              ),
+              Text('Thank You For Viewing', style: TextStyle(fontSize: 20)),
+              Spacer(),
 
-            //bottom signature text
-            Text('Made with ❤️ by @Ugocode'),
-          ],
+              //bottom signature text
+              Text('Made with ❤️ by @Ugocode'),
+            ],
+          ),
         ),
       ),
     );
