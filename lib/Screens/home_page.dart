@@ -24,7 +24,7 @@ class _MyHomePageState extends State<MyHomePage> {
       random.nextInt(255),
       random.nextInt(255),
       random.nextInt(255),
-      1,
+      2,
     );
 
     setState(() {
@@ -50,7 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                'Hello There! ',
+                'Hello there! ',
                 style: TextStyle(
                   fontSize: 35,
                   color: Colors.black,
