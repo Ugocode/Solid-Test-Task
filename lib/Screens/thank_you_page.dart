@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 
 ///Thannk you page
 class ThankyouPage extends StatelessWidget {
@@ -10,22 +11,25 @@ class ThankyouPage extends StatelessWidget {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(),
-        backgroundColor: Colors.teal[100],
+        backgroundColor: Colors.teal[200],
         body: Center(
           child: Expanded(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
-              children: const [
-                Spacer(),
-                Text(
-                  '🎉',
+              children: [
+                const Spacer(),
+                const Text(
+                  '🎊🎊',
                   style: TextStyle(fontSize: 80),
+                ).animate().shake(duration: const Duration(seconds: 1)),
+                const Text(
+                  'Thank You For Viewing',
+                  style: TextStyle(fontSize: 20, color: Colors.white),
                 ),
-                Text('Thank You For Viewing', style: TextStyle(fontSize: 20)),
-                Spacer(),
+                const Spacer(),
 
                 //bottom signature text
-                Text('Made with ❤️ by @Ugocode'),
+                const Text('Made with ❤️ by @Ugocode'),
               ],
             ),
           ),
