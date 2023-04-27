@@ -1,10 +1,20 @@
 # solid_task
 
-A new Flutter project.
+This is a project for Solid Software
 
-## Getting Started
+## Color Generation
 
-This project is a starting point for a Flutter application.
+Tap on the screen of the homepage and see diffrent colors greet you Hello There!
+
+
+
+
+This projects uses Solid lints
+[![style: solid](https://img.shields.io/badge/style-solid-orange)](https://pub.dev/packages/solid_lints)
+
+
+
+## This is a Flutter Project 
 
 A few resources to get you started if this is your first Flutter project:
 
