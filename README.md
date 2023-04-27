@@ -4,12 +4,12 @@ This is a project for Solid Software
 
 ## Color Generation
 
-Tap on the screen of the homepage and see diffrent colors greet you Hello There!
+Tap on the screen of the homepage and see different colors greet you Hello There!
 
 
 
 
-This projects uses Solid lints
+This project uses Solid lints
 [![style: solid](https://img.shields.io/badge/style-solid-orange)](https://pub.dev/packages/solid_lints)
 
 
