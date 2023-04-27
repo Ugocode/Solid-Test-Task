@@ -58,6 +58,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   'Hello there! ',
                   style: TextStyle(
                     fontSize: 35,
+                    fontWeight: FontWeight.w700,
                     color: Colors.green,
                   ),
                 )
