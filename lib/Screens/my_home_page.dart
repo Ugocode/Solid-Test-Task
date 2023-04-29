@@ -63,8 +63,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     ..shader = const LinearGradient(
                       colors: <Color>[
                         Colors.pinkAccent,
+                        Colors.orange,
                         Colors.deepPurpleAccent,
-                        Colors.red
+                        Colors.blue,
+                        Colors.pink,
                       ],
                     ).createShader(
                       const Rect.fromLTWH(0.0, 0.0, colorWdith, colorHeight),
