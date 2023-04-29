@@ -50,37 +50,45 @@ class _MyHomePageState extends State<MyHomePage> {
           title: const Text("Tap On the Screen"),
         ),
         body: Center(
-          child: Expanded(
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                const Text(
-                  'Hello there! ',
-                  style: TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.w700,
-                    color: Colors.green,
-                  ),
-                )
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text(
+                'Hello there! ',
+                style: TextStyle(
+                  fontSize: textSize,
+                  fontWeight: FontWeight.w700,
+                  // color: Colors.green,
+                  foreground: Paint()
+                    ..shader = const LinearGradient(
+                      colors: <Color>[
+                        Colors.pinkAccent,
+                        Colors.deepPurpleAccent,
+                        Colors.red
+                      ],
+                    ).createShader(
+                      const Rect.fromLTWH(0.0, 0.0, colorWdith, colorHeight),
+                    ),
+                ),
+              )
 
-                    ///adding some animations to the text
-                    .animate()
-                    .flip(duration: const Duration(seconds: 2))
-                    .scale()
-                    .then()
-                    .shimmer(delay: textShimmer.ms),
-                const Text(
-                  '👋',
-                  style: TextStyle(
-                    fontSize: 35,
-                    color: Colors.black,
-                  ),
-                )
-                    .animate()
-                    .scale(delay: emojiShimmerValue.ms)
-                    .shake(duration: const Duration(seconds: 1))
-              ],
-            ),
+                  ///adding some animations to the text
+                  .animate()
+                  .flip(duration: const Duration(seconds: 2))
+                  .scale()
+                  .then()
+                  .shimmer(delay: textShimmer.ms),
+              const Text(
+                '👋',
+                style: TextStyle(
+                  fontSize: 35,
+                  color: Colors.black,
+                ),
+              )
+                  .animate()
+                  .scale(delay: emojiShimmerValue.ms)
+                  .shake(duration: const Duration(seconds: 1))
+            ],
           ),
         ),
 
